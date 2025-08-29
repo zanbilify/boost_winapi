@@ -1,0 +1,18 @@
+[package]
+name = "boost_winapi"
+description = "Boost C++ library boost_winapi packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_winapi"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_winapi"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
